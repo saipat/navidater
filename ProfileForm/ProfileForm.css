@@ -1,0 +1,537 @@
+@charset "UTF-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		4;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+.fluid {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	float: left;
+	display: block;
+}
+
+.fluidList {
+    list-style:none;
+    list-style-image:none;
+    margin:0;
+    padding:0;        
+}
+
+/* Mobile Layout: 480px and below. */
+  
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	padding-left: 2.375%;
+	padding-right: 2.375%;
+	clear: none;
+	float: none;
+	font-family: Avenir;
+}
+.zeroMargin_mobile {
+    margin-left: 0;
+}
+.hide_mobile {
+    display: none;
+}
+#box1{
+	height: 540px;
+	margin-top:40px;
+}
+#box2{
+	height: 525px;
+	margin-top:10px;
+}
+#box1 ul, #box2 ul{
+	padding-left: 0;
+}
+#box1 ul li, #box2 ul li{
+	list-style-type: none;
+}
+li{ 
+	background: #d7d7d7; 
+}
+li:nth-child(odd){ 
+	background: #ebebeb; 
+}
+.lb1, .lb2{
+	color: #555657;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 40px;
+	padding-left: 10px;
+	width: 120px; 
+	opacity: 0.8;
+	display: inline-block;
+}
+.lb1{
+	margin-right: 48px;
+}
+.lb2{
+	margin-right: 44px;
+}
+#box2 .lb2{
+	padding-left: 5px;
+	font-size: 14px;
+	line-height: 40px;
+	width: 150px;
+	margin-right: 8px;
+	margin-left: 5px;
+}
+#box2 .lb1{
+	margin-left: 5px;
+	margin-right: 42px;
+	padding-left: 3px;
+}
+#box2 .lg{
+	width: 183px;
+	margin-right: 4px;
+}
+#box1 input, #box2 input{
+	border: 1px solid #555657;
+	background-color: #ffffff;
+	padding-left: 50px;
+	width: 130px;
+	height: 23px;
+}
+#box1 select, #box2 select{
+	color: #555657;
+	font-size: 17px;
+	font-weight: 300;
+	line-height: 51px;
+	width: 130px;
+	height: 23px;
+}
+#box2 .long{
+	width: 100px;	
+}
+#box3, #box4{
+	background-color: #ebebeb;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 100%;
+	margin-left: 1px;
+	margin-top: 25px;
+}
+#box3 label, #box4 label{
+	margin: 5px 15px 7px 0;
+	color: #555657;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 30px;
+	opacity: 0.8;
+}
+#box3 select{
+	margin: 10px 0 10px 0;
+	width: 40%;
+}
+#box3 .rel{
+	width: 85%;
+}
+#input{
+	width: 40%;
+	margin-right: 20px;
+}
+#box3 input, #box4 input,textarea{
+	border: 1px solid black;
+}
+#box4 textarea{
+	width: 300px;
+	height: 200px;
+	margin-bottom: 10px;
+}
+#box4 select{
+	width: 63px;
+}
+#box4 input{
+	width: 300px;
+}
+#box4 button{
+	color: #ffffff;
+	background-color: #97da00;
+	border: none;
+	border-radius: 6px;
+	font-size: 15px;
+	font-weight: 300;
+	width: 180px;
+	height: 25px;
+	margin-top: 16px;
+}
+footer{
+	margin-top: 20px;
+	width: 100%;
+}
+footer #bim{
+	position: absolute;
+	height: 302px;
+	opacity: 0.07;
+	width: 200px;
+}
+footer #row1{
+	background-image: -webkit-linear-gradient(0deg, #9fd133 12%, #a7db37 32%, #b8f13e 50%, #9fd133 87%);
+	background-image: -moz-linear-gradient(0deg, #9fd133 12%, #a7db37 32%, #b8f13e 50%, #9fd133 87%);
+	background-image: -o-linear-gradient(0deg, #9fd133 12%, #a7db37 32%, #b8f13e 50%, #9fd133 87%);
+	background-image: linear-gradient(90deg, #9fd133 12%, #a7db37 32%, #b8f13e 50%, #9fd133 87%);
+	border:1px solid #aee43a;
+}
+footer ul{
+	color: #000000;
+	font-size: 8px;
+	font-weight: 300;
+	color: black;
+	line-height: 34px;
+	padding-left: 6px;
+	margin-top: 20px;
+}
+footer ul li{
+	list-style-type: none;
+	text-align:  center;
+	background: none;
+}
+footer ul li:nth-child(odd){ 
+	background: none; 
+}
+footer ul li a{
+	text-decoration:none;
+	color: black;
+}
+footer #row2{
+	background-image: -webkit-linear-gradient(0deg, #555657 10%, #7b7b7b 50%, #555657 87%);
+	background-image: -moz-linear-gradient(0deg, #555657 10%, #7b7b7b 50%, #555657 87%);
+	background-image: -o-linear-gradient(0deg, #555657 10%, #7b7b7b 50%, #555657 87%);
+	background-image: linear-gradient(90deg, #555657 10%, #7b7b7b 50%, #555657 87%);
+}
+footer #row2 h5{
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 37px;
+	text-align: center;
+	margin-top: 1.4em;
+}
+footer #row2 img{
+	display: block;
+	margin: 0 auto 15px auto;
+}
+
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer header img{
+	width: 100%;
+}
+#box1, #box2{
+	height: 520px;
+	width: 90%;
+	margin-left: 34px;
+	margin-top: 50px;
+}
+.lb1, .lb2{
+	font-size: 18px;
+	padding-left: 50px;
+	width: 190px; 
+}
+.lb1{
+	margin-right: 65px;
+}
+.lb2{
+	margin-right: 60px;
+}
+#box2 .lb2{
+	padding-left: 30px;
+	font-size: 17px;
+	line-height: 40px;
+	width:200px;
+	margin-right: 65px;
+}
+#box2 .lb1{
+	margin-right: 80px;
+	padding-left: 30px;
+	font-size: 17px;
+}
+#box2 .lg{
+	width: 260px;
+	margin-right: 156px;
+}
+#box1 input, #box2 input{
+	background-color: #ffffff;
+	padding-left: 70px;
+	width: 250px;
+	height: 23px;
+}
+#box2 input{
+	width: 250px;
+}
+#box1 select, #box2 select{
+	color: #555657;
+	font-size: 17px;
+	font-weight: 300;
+	line-height: 51px;
+	width: 252px;
+	height: 23px;
+}
+#box2 .long{
+	width: 100px;	
+}
+#box3, #box4{
+	background-color: #ebebeb;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 88.5%;
+	margin: 80px 0 0 40px;
+}
+#box3 label, #box4 label{
+	margin: 10px 15px 7px 0;
+	padding-left: 0;
+	color: #555657;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 30px;
+	opacity: 0.8;
+}
+#box3 select{
+	margin: 10px 0 10px 0;
+	width: 40%;
+}
+.rel #fname{
+	width: 190px;
+}
+.rel #input{
+	margin-left: 0;
+	width: 40%;
+	border: 1px solid black;
+	margin-right: 20px;
+}
+#box4 label{
+	margin-top: 20px;
+}
+#box4 input{
+	margin-left: 0;
+	width: 450px;
+}
+#box4 textarea{
+	margin-left: 0;
+	width: 450px;
+	height: 220px;
+}
+#box4 #line{
+	margin-top: 30px;
+	margin-bottom: 2px;
+}
+#box4 select{
+	width: 100px;
+	margin-left: 20px;
+}
+#box4 button{
+	font-size: 17px;
+	width: 190px;
+	height: 28px;
+	margin-top: 18px;
+	margin-left: 0;
+}
+}
+
+
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px){
+
+.gridContainer {
+	width: 100%;
+}
+header img{
+	width: 100%;  !important
+	height: auto;
+}
+#box1, #box2{
+	width: 42%;
+	margin-left: 80px;
+	height: 540px;
+	margin-top: 70px;
+}
+#box2{
+	margin-left: 20px;
+}
+.lb1, .lb2{
+	font-size: 16px;
+	padding-left: 10px;
+	width: 135px; 
+	margin-left: 20px;
+}
+.lb1{
+	margin-right:90px;
+}
+.lb2{
+	margin-right: 88px;
+}
+#box2 .lb2{
+	padding-left: 10px;
+	font-size: 16px;
+	line-height: 40px;
+	width: 180px;
+	margin-right: 50px;
+	margin-left: 20px;
+}
+#box2 .lb1{
+	margin-left: 20px;
+	margin-right: 98px;
+	padding-left: 10px;
+	font-size: 16px;
+}
+#box2 .lg{
+	width: 240px;
+	margin-right: 55px;
+}
+#box1 input, #box2 input{
+	background-color: #ffffff;
+	padding-left: 50px;
+	width: 170px;
+	height: 23px;
+}
+#box2 input{
+	width: 163px;
+}
+#box1 select, #box2 select{
+	color: #555657;
+	font-size: 17px;
+	font-weight: 300;
+	line-height: 51px;
+	width: 164px;
+	height: 23px;
+}
+#box2 .long{
+	width: 100px;	
+}
+#box3, #box4{
+	background-color: #ebebeb;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 85%;
+	margin: 50px 0 0 80px;
+}
+.rel #fname{
+	width: 40%;
+}
+#box4 input{
+	height: 30px;
+	width: 850px;
+}
+#box4 textarea{
+	width: 850px;
+	height: 250px;
+}
+#box4 #line{
+	margin-top: 30px;
+	margin-bottom: 0;
+}
+#box4 select{
+	width: 100px;
+	margin-left: 20px;
+}
+#box4 button{
+	font-size: 17px;
+	width: 200px;
+	height: 30px;
+}
+}
+@media only screen and (min-width: 631px) and (max-width:1024px){
+
+.gridContainer {
+	width: 100%;
+}
+header img{
+	width: 100%;  !important
+	height: auto;
+}
+#box1, #box2{
+	width: 41.5%;
+	margin-left: 80px;
+	height: 540px;
+	margin-top: 70px;
+}
+#box2{
+	margin-left: 40px;
+}
+.lb1, .lb2{
+	font-size: 16px;
+	padding-left: 10px;
+	width: 135px; 
+	margin-left: 10px;
+}
+.lb1{
+	margin-right: 40px;
+}
+.lb2{
+	margin-right: 38px;
+}
+#box2 .lb2{
+	width: 180px;
+	margin-right: 20px;
+	margin-left: 10px;
+}
+#box2 .lb1{
+	margin-left: 10px;
+	margin-right: 68px;
+}
+#box2 .lg{
+	width: 220px;
+	margin-right: 45px;
+}
+#box3, #box4{
+	padding: 20px 0 20px 0;
+	width: 86.6%;
+	margin: 50px 0 0 80px;
+}
+#box4 input{
+	height: 30px;
+	width: 650px;
+}
+#box4 textarea{
+	width: 650px;
+	height: 250px;
+}
+#box4 #line{
+	margin-top: 30px;
+	margin-bottom: 2px;
+}
+#box4 select{
+	width: 100px;
+	margin-left: 20px;
+}
+#box4 button{
+	font-size: 17px;
+	font-weight: 300;
+	width: 190px;
+	height: 28px;
+	margin-top: 16px;
+	margin-left: 20px;
+}
+}

@@ -1,0 +1,310 @@
+@charset "UTF-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		4;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+.fluid {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	float: left;
+	display: block;
+}
+
+.fluidList {
+    list-style:none;
+    list-style-image:none;
+    margin:0;
+    padding:0;        
+}
+
+/* Mobile Layout: 480px and below. */
+  
+.gridContainer {
+	margin: 20px;
+	width: 87%;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	clear: none;
+	float: none;
+}
+#div1 {
+}
+.zeroMargin_mobile {
+    margin-left: 0;
+}
+.hide_mobile {
+    display: none;
+}
+.gridContainer{
+	background-image: -webkit-linear-gradient(0deg, #87c400 9%, #99dd01 52%, #87c400 93%);
+	background-image: -moz-linear-gradient(0deg, #87c400 9%, #99dd01 52%, #87c400 93%);
+	background-image: -o-linear-gradient(0deg, #87c400 9%, #99dd01 52%, #87c400 93%);
+	background-image: linear-gradient(90deg, #87c400 9%, #99dd01 52%, #87c400 93%);
+	border-radius: 6px;
+	height: 1060px;
+	border-color: #ffffff;
+	font-family: Avenir;
+}
+#close_icon{
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	margin-top: 20px;
+	float: right;
+}
+#phoneImg{
+	width:10em;
+	height: 20em;
+	margin:  3.5em auto 0 auto;
+	display: block;
+}
+#para{
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 26px;
+	margin-top: 40px;
+	text-align:center;
+}
+#middle img{
+	width: 8em;
+	height: 1.6em;
+	float:none;
+	display: block;
+	margin: 0 auto 0 auto;
+}
+#middle p{
+	color: #ffffff;
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 36px;
+	text-align: center;
+}
+#img_sec img{
+	width: 7em;
+	height: 3em;
+	display: block;
+	margin: 20px auto 0 auto;
+}
+#sec2 p{
+	color: #ffffff;
+	font-size: 17px;
+	font-weight: 300;
+	line-height: 34px;
+	text-align: left;
+	margin-top: 3em;
+	margin-left: 20px;
+}
+#sec2 input{
+	display:block;
+	margin: 0 auto 0 auto;
+	background-color: #ffffff;
+}
+::-webkit-input-placeholder {
+   text-align: center;
+}
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center; 
+}
+:-ms-input-placeholder {  
+    text-align: center; 
+}
+#sec2 button{
+	border-radius: 6px;
+	background-image: -webkit-linear-gradient(90deg, #cecdcd 9%, #ffffff 100%);
+	background-image: -moz-linear-gradient(90deg, #cecdcd 9%, #ffffff 100%);
+	background-image: -o-linear-gradient(90deg, #cecdcd 9%, #ffffff 100%);
+	background-image: linear-gradient(0deg, #cecdcd 9%, #ffffff 100%);
+	box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.35);
+	border: none;
+	color: #555657;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 23px;
+	width: 5em;
+	margin: 1em auto 0 auto;
+	display: block;
+}
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+	clear: none;
+	float: none;
+	margin-left: auto;
+	height: 890px;
+}
+#div1 {
+}
+.zeroMargin_tablet {
+    margin-left: 0;
+}
+.hide_tablet {
+    display: none;
+}
+#close_icon{
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	margin-top: 20px;
+	margin-right: 30px;
+	float: right;
+}
+#phoneImg{
+	width:15em;
+	height: 35em;
+	margin-top: 8em;
+	margin-left: 2em;
+	float: left;
+}
+#para{
+	font-size: 18px;
+	margin-top: 9em;
+	line-height: 24px;
+}
+#middle img{
+	width: 8em;
+	height: 1.6em;
+	float:none;
+	display: block;
+	margin: 0 auto 0 auto;
+}
+#middle p{
+	font-size: 24px;
+	margin-right: 20px;
+	text-align:center;
+}
+#img_sec img{
+	width: 10em;
+	height: 3.6em;
+	display: block;
+	margin: 10px auto 0 auto;
+}
+#sec2 p{
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 28px;
+	text-align: center;
+	display: block;
+	margin-left: 17em;
+	margin-top: 10px;
+}
+#sec2 input{
+	display:block;
+	margin: 0 auto 0 auto;
+	background-color: #ffffff;
+	width: 15em;
+}
+#sec2 button{
+	font-size: 18px;
+	line-height: 23px;
+	width: 7em;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+
+.gridContainer {
+	width: 88%;
+	max-width: 1232px;
+	padding-left: 0.75%;
+	padding-right: 0.75%;
+	margin: auto;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#div1 {
+}
+.zeroMargin_desktop {
+    margin-left: 0;
+}
+.hide_desktop {
+    display: none;
+}
+#close_icon{
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	margin-top: 20px;
+	margin-right: 30px;
+	float: right;
+}
+#phoneImg{
+	width:18em;
+	height: 40em;
+	margin-left: 7em;
+}
+#para{
+	font-size: 22px;
+	margin-top: 7em;
+	line-height: 24px;
+}
+#middle img{
+	width: 9em;
+	height: 1.8em;
+	margin: 0 auto 0 auto;
+}
+#middle h3{
+	font-size: 28px;
+	text-align: left;
+	margin-right: 20px;
+}
+#img_sec img{
+	width: 12em;
+	height: 4em;
+	margin: 18px auto 0 auto;
+}
+#sec2 p{
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	margin-left: 17em;
+	margin-top: 25px;
+}
+#sec2 input{
+	display:block;
+	margin: 0 auto 0 auto;
+	background-color: #ffffff;
+	width: 15em;
+}
+#sec2 button{
+	font-size: 20px;
+	width: 7em;
+}
+}
